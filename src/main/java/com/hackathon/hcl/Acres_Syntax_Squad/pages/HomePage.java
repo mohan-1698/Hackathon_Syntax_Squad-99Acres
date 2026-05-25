@@ -99,13 +99,6 @@ public class HomePage extends BasePage {
         clickElement(twoBhkOption);
         return this;
     }
-
-    // Click Final Search Button
-//    public HomePage clickSearchButton() {
-//
-//        clickElement(searchButton);
-//        return this;
-//    }
     
     public SearchResult clickSearchButton() {
 

@@ -143,6 +143,9 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;99Acres Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.hackathon.hcl.Acres_Syntax_Squad.listener.ExtentListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Property Search Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest&quot;/&gt;
@@ -189,12 +192,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testPropertySearchFlow')
 data.setCell(0, 2, 'com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest')
-data.setCell(0, 3, 13128);
+data.setCell(0, 3, 12113);
 window.suiteTableData['99Acres_Suite']= { tableData: data, tableDiv: 'times-div-99Acres_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-99Acres_Suite">
               </div> <!-- times-div-99Acres_Suite -->
             </div> <!-- times-div -->
@@ -227,11 +230,11 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPropertySearchFlow</span>
-                <span class="method-start">3039 ms</span>
+                <span class="method-start">3728 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16172 ms</span>
+                <span class="method-start">15858 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -33,14 +33,4 @@ public class WaitUtil {
     public void waitForInvisibility(WebElement element) {
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
-
-    // Wait for URL Contains
-    public void waitForUrlContains(String value) {
-        wait.until(ExpectedConditions.urlContains(value));
-    }
-
-    // Wait for Title Contains
-    public void waitForTitleContains(String value) {
-        wait.until(ExpectedConditions.titleContains(value));
-    }
 }

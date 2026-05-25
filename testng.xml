@@ -3,12 +3,18 @@
 
 <suite name="99Acres Suite">
 
+    <listeners>
+        <listener class-name=
+        "com.hackathon.hcl.Acres_Syntax_Squad.listener.ExtentListener"/>
+    </listeners>
+
     <test name="Property Search Test">
 
         <classes>
-        
-            <class name="com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest"/>
-            
+
+            <class name=
+            "com.hackathon.hcl.Acres_Syntax_Squad.tests.PropertySearchTest"/>
+
         </classes>
 
     </test>
