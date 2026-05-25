@@ -1,38 +1,36 @@
 package com.hackathon.hcl.Acres_Syntax_Squad.basetest;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
-/**
- * Unit test for simple App.
- */
-public class BaseTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public BaseTest( String testName )
-    {
-        super( testName );
+import com.hackathon.hcl.Acres_Syntax_Squad.utils.DriverFactory;
+import com.hackathon.hcl.Acres_Syntax_Squad.utils.ConfigReader;
+
+public class BaseTest {
+
+    protected WebDriver driver;
+
+    @BeforeMethod
+    public void setUp() {
+
+        // Initialize Driver
+        DriverFactory.initDriver(ConfigReader.getBrowser());
+
+        // Get Driver Instance
+        driver = DriverFactory.getDriver();
+
+        // Launch Application
+        driver.get(ConfigReader.getBaseUrl());
+
+        // Maximize Window
+        driver.manage().window().maximize();
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( BaseTest.class );
-    }
+    @AfterMethod
+    public void tearDown() {
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+        // Quit Driver
+        DriverFactory.quitDriver();
     }
 }

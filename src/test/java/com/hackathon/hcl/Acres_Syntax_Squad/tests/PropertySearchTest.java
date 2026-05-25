@@ -1,5 +1,23 @@
 package com.hackathon.hcl.Acres_Syntax_Squad.tests;
 
-public class PropertySearchTest {
+import org.testng.annotations.Test;
 
+import com.hackathon.hcl.Acres_Syntax_Squad.basetest.BaseTest;
+import com.hackathon.hcl.Acres_Syntax_Squad.pages.HomePage;
+
+public class PropertySearchTest extends BaseTest {
+
+    @Test
+    public void testPropertySearchFlow() {
+
+        HomePage homePage = new HomePage(driver);
+
+        homePage
+                .acceptCookies()
+                .clickBuyOption()
+                .enterLocation()
+                .selectFirstSuggestion();
+
+        System.out.println("Homepage flow executed successfully");
+    }
 }
