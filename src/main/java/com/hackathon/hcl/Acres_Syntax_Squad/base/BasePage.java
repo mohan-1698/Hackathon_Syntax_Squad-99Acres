@@ -1,10 +1,10 @@
-package com.hackathon.hcl.Acres_Syntax_Squad;
+package com.hackathon.hcl.Acres_Syntax_Squad.base;
 
 /**
  * Hello world!
  *
  */
-public class App 
+public class BasePage 
 {
     public static void main( String[] args )
     {
